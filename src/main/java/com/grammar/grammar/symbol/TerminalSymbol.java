@@ -8,4 +8,9 @@ public class TerminalSymbol extends ISymbol {
     public int getWeight() {
         return 100;
     }
+
+    @Override
+    public String toString() {
+        return symbols;
+    }
 }

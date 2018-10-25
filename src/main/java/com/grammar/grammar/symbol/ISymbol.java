@@ -2,7 +2,7 @@ package com.grammar.grammar.symbol;
 
 public abstract class ISymbol {
 
-    private String symbols;
+    protected String symbols;
 
     public ISymbol(String symbols) {
         this.symbols = symbols;
@@ -23,10 +23,5 @@ public abstract class ISymbol {
     @Override
     public int hashCode() {
         return symbols != null ? symbols.hashCode() : 0;
-    }
-
-    @Override
-    public String toString() {
-        return symbols + '\'';
     }
 }
